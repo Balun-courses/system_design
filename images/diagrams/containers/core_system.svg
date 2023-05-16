@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="879px" preserveAspectRatio="none" style="width:811px;height:879px;background:#FFFFFF;" version="1.1" viewBox="0 0 811 879" width="811px" zoomAndPan="magnify"><defs/><g><!--MD5=[eb92b8cb38347c70e7c8a428b265a168]
+cluster coreSystem--><g id="cluster_coreSystem"><rect fill="none" height="446" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="475" x="7" y="427"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="188" y="463.8516">Core system</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="62" x="213.5" y="478.7637">[System]</text></g><!--MD5=[5d68f047bb39b3634c937dca30540c50]
+entity urlService--><g id="elem_urlService"><rect fill="#438DD5" height="131.75" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="199" x="215.5" y="498"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="246.5" y="519.1387">«webApp»«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="105" x="262.5" y="536.8203">URL Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="27" x="301.5" y="551.7324">[Go]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="313" y="567.5576"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="225.5" y="583.8545">Handles creation tiny URL</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="226" y="600.1514">and redirects to long URL</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="270" y="616.4482">from tiny URL</text></g><!--MD5=[b30d069aa246ddde5759edef355bfc7b]
+entity urlDatabase--><g id="elem_urlDatabase"><path d="M23,743 C23,733 118,733 118,733 C118,733 213,733 213,743 L213,847.4531 C213,857.4531 118,857.4531 118,857.4531 C118,857.4531 23,857.4531 23,847.4531 L23,743 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M23,743 C23,753 118,753 118,753 C118,753 213,753 213,743 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="104" x="66" y="768.1387">«db»«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="121" x="57.5" y="785.8203">URL database</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="93.5" y="800.7324">[PgSQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="116" y="816.5576"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="33" y="832.8545">Stores long URLs by tiny</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="100.5" y="849.1514">URLs</text></g><!--MD5=[fe82fa4d9862014ebfc8cfce0a33835b]
+entity urlCache--><g id="elem_urlCache"><path d="M248,743 C248,733 357,733 357,733 C357,733 466,733 466,743 L466,847.4531 C466,857.4531 357,857.4531 357,857.4531 C357,857.4531 248,857.4531 248,847.4531 L248,743 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M248,743 C248,753 357,753 357,753 C357,753 466,753 466,743 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="104" x="305" y="768.1387">«db»«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="92" x="311" y="785.8203">URL cache</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="322" y="800.7324">[Tarantool]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="355" y="816.5576"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="258" y="832.8545">Stores popular long URLs by</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="325.5" y="849.1514">tiny URLs</text></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><g id="elem_user"><rect fill="#08427B" height="100.5938" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="78" x="276" y="7"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="286" y="28.1387">«person»</text><image height="48" width="48" x="291" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="30.9688"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="41" x="294.5" y="93.8203">User</text></g><!--MD5=[3697f15ab8f87c202d2c95dbe0476867]
+entity loadBalancer--><g id="elem_loadBalancer"><rect fill="#438DD5" height="99.1563" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="144" x="243" y="225"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="278" y="246.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="124" x="253" y="263.8203">Load Balancer</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="293" y="278.7324">[Nginx]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="313" y="294.5576"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="255.5" y="310.8545">Uses round robin</text></g><!--MD5=[c591e3d2f82d3c9420437835199b30d5]
+entity analyticsSystem--><g id="elem_analyticsSystem"><rect fill="#438DD5" height="115.4531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="208" x="578" y="506.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="645" y="527.6387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="150" x="607" y="545.3203">Analytics system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="625.5" y="560.2324">[Software system]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="680" y="576.0576"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="599.5" y="592.3545">Stores different analytic</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="588" y="608.6514">information about tiny URLs</text></g><!--MD5=[3401ea4b568088ee2885729e55a4da0f]
+entity messageQueue--><g id="elem_messageQueue"><path d="M541.5,742.5 L740.5,742.5 C745.5,742.5 745.5,795.2266 745.5,795.2266 C745.5,795.2266 745.5,847.9531 740.5,847.9531 L541.5,847.9531 C536.5,847.9531 536.5,795.2266 536.5,795.2266 C536.5,795.2266 536.5,742.5 541.5,742.5 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M740.5,742.5 C735.5,742.5 735.5,795.2266 735.5,795.2266 C735.5,847.9531 740.5,847.9531 740.5,847.9531 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="599" y="758.6387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="121" x="575.5" y="776.3203">Events queue</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="614" y="791.2324">[Kafka]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="634" y="807.0576"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="541.5" y="823.3545">Message queue for events</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="594.5" y="839.6514">by tiny URLs</text></g><!--MD5=[0accf94acb3c75215f316b2a9433c8ed]
+link user to loadBalancer--><g id="link_user_loadBalancer"><path d="M315,108.1 C315,140.45 315,182.78 315,216.51 " fill="none" id="user-to-loadBalancer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="315,224.9,318,216.9,312,216.9,315,224.9" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="149" x="316" y="150.1387">Creates tiny URL and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="131" x="323" y="164.1074">redirects from tiny</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="112" x="334.5" y="178.0762">URL to long URL</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="370" y="192.0449">[REST]</text></g><!--MD5=[5c734b67200da9aaebc7dd4dfe0784c3]
+link loadBalancer to urlService--><g id="link_loadBalancer_urlService"><path d="M315,324.27 C315,369.59 315,437.7 315,489.59 " fill="none" id="loadBalancer-to-urlService" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="315,497.77,318,489.77,312,489.77,315,497.77" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="149" x="316" y="366.1387">Creates tiny URL and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="131" x="323" y="380.1074">redirects from tiny</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="112" x="334.5" y="394.0762">URL to long URL</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="370" y="408.0449">[REST]</text></g><!--MD5=[3763f76768dc3f20c01436e67a477d64]
+link urlService to urlDatabase--><g id="link_urlService_urlDatabase"><path d="M215.49,608.77 C193.32,622.44 171.75,639.46 156,660 C141.65,678.71 132.72,702.6 127.16,725.02 " fill="none" id="urlService-to-urlDatabase" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="125.33,732.88,130.0673,725.7696,124.2239,724.4079,125.33,732.88" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="126" x="162.5" y="672.1387">Creates tiny URLs</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="137" x="157" y="686.1074">and gets long URLs</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="184" y="700.0762">by tiny URLs</text></g><!--MD5=[e7098b971679cd4f0ab23c600b805103]
+link urlService to urlCache--><g id="link_urlService_urlCache"><path d="M306.94,630.28 C305.81,653.5 306.55,679.66 312,703 C313.71,710.31 316.09,717.71 318.88,724.96 " fill="none" id="urlService-to-urlCache" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="322.06,732.76,321.8121,724.2196,316.2576,726.4885,322.06,732.76" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="140" x="313" y="672.1387">Gets and puts least</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="113" x="326.5" y="686.1074">frequently used</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="367.5" y="700.0762">URLs</text></g><!--MD5=[578122be973d2ffd8ca12fbdccdcaeb3]
+link urlService to messageQueue--><g id="link_urlService_messageQueue"><path d="M414.72,626.01 C430.87,636.86 447.15,648.41 462,660 C484.06,677.22 486.17,685.49 508,703 C522.61,714.72 538.67,726.53 554.43,737.58 " fill="none" id="urlService-to-messageQueue" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="561.16,742.27,556.3131,735.2338,552.8817,740.1557,561.16,742.27" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="103" x="525" y="679.1387">Publishes click</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="509" y="693.1074">events by tiny URLs</text></g><!--MD5=[b525ada1624b930ebc2dd12a68dc7efb]
+link analyticsSystem to messageQueue--><g id="link_analyticsSystem_messageQueue"><path d="M671.87,621.61 C665.74,655.82 657.94,699.38 651.71,734.16 " fill="none" id="analyticsSystem-to-messageQueue" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="650.25,742.35,654.6175,735.0066,648.712,733.9456,650.25,742.35" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="134" x="664.5" y="679.1387">Subscribes on click</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="664" y="693.1074">events by tiny URLs</text></g><!--MD5=[5bedb1ebdd82c98766d09fccddbb4977]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user, "User")
+Container(loadBalancer, "Load Balancer", "Nginx", "Uses round robin")
+Container(analyticsSystem, "Analytics system", "Software system", "Stores different analytic information about tiny URLs")
+ContainerQueue(messageQueue, "Events queue", "Kafka", "Message queue for events by tiny URLs")
+
+System_Boundary(coreSystem, "Core system") {
+    Container(urlService, "URL Service", "Go", "Handles creation tiny URL and redirects to long URL from tiny URL", $tags="webApp")
+    ContainerDb(urlDatabase, "URL database", "PgSQL", "Stores long URLs by tiny URLs",  $tags="db")
+    ContainerDb(urlCache, "URL cache", "Tarantool", "Stores popular long URLs by tiny URLs",  $tags="db")
+}
+
+Rel(user, loadBalancer, "Creates tiny URL and redirects from tiny URL to long URL", "REST")
+Rel(loadBalancer, urlService, "Creates tiny URL and redirects from tiny URL to long URL", "REST")
+
+Rel(urlService, urlDatabase, "Creates tiny URLs and gets long URLs by tiny URLs")
+Rel(urlService, urlCache, "Gets and puts least frequently used URLs")
+Rel(urlService, messageQueue, "Publishes click events by tiny URLs")
+Rel(analyticsSystem, messageQueue, "Subscribes on click events by tiny URLs")
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendFontColor #FFFFFF
+skinparam LegendBackgroundColor transparent
+skinparam LegendBorderColor transparent
+
+skinparam rectangle<<legendArea>> {
+    backgroundcolor transparent
+    bordercolor transparent
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+}
+
+skinparam database {
+    StereotypeFontSize 12
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam person {
+    StereotypeFontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    style awesome
+}
+
+skinparam rectangle<<boundary>> {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    BorderStyle dashed
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<boundary>>StereotypeFontColor transparent
+skinparam rectangle<<boundary>>StereotypeFontColor transparent
+
+skinparam rectangle<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<enterprise_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<enterprise_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<enterprise_boundary>>StereotypeFontColor transparent
+
+
+skinparam rectangle<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<system_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<system_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<system_boundary>>StereotypeFontColor transparent
+
+
+skinparam rectangle<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<container_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<container_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<container_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<system_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<system_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<system_boundary>>StereotypeFontColor transparent
+
+
+skinparam rectangle<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<enterprise_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<enterprise_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<enterprise_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+sprite $robot [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000005BFFFFFFFFFFFFFFFFFFFFFE9100000000000
+0000000000AFFFFFFFFFFFFFFFFFFFFFFFFFE30000000000
+0000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFE1000000000
+000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000000000
+000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000699405FFFFFFC427FFFFFFFFFC427FFFFFFE009982000
+008FFF705FFFFFE10006FFFFFFFE00007FFFFFE00FFFF100
+00CFFF705FFFFFA00001FFFFFFF900002FFFFFE00FFFF500
+00DFFF705FFFFFB00002FFFFFFFA00003FFFFFE00FFFF500
+00DFFF705FFFFFF4000AFFFFFFFF3000BFFFFFE00FFFF500
+00DFFF705FFFFFFFA8DFFFFFFFFFFA8DFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00CFFF705FFFFFF87777777777777777CFFFFFE00FFFF500
+008FFF705FFFFFF100000000000000009FFFFFE00FFFF100
+000699405FFFFFF76666666666666666CFFFFFE009982000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFF7000000000
+0000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFD0000000000
+00000000004CFFFFFFFFFFFFFFFFFFFFFFFF910000000000
+000000000000011111111111111111111110000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $robot2 [48x48/16] {
+000000000000000088888888888888880000000000000000
+000000000000000AFFFFFFFFFFFFFFFFA000000000000000
+00000000000000CFFFFFFFFFFFFFFFFFFC00000000000000
+00000000000004EFFFFFFFFFFFFFFFFFFE40000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFFA0000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000888FFFFFFFFFFFFFFFFFFFF88800000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000000888FFFFFFFFFFFFFFFFFFFF88800000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000004CFFFFFFFFFFFFFFFFFFC40000000000000
+000000488888848CFFFFFFFFFFFFFFFFC848888884000000
+00000CFFFFFFFFC888888888888888888CFFFFFFFFC00000
+00008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000
+0000CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0000CFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFC0000
+00008FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF80000
+00000CFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFC00000
+000000488887578888888888888888888864688884000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+skinparam rectangle<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<container_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<container_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<container_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rectangle "<$person>\n== User" <<person>> as user 
+rectangle "== Load Balancer\n//<size:12>[Nginx]</size>//\n\nUses round robin" <<container>> as loadBalancer 
+rectangle "== Analytics system\n//<size:12>[Software system]</size>//\n\nStores different analytic information about tiny URLs" <<container>> as analyticsSystem 
+queue "== Events queue\n//<size:12>[Kafka]</size>//\n\nMessage queue for events by tiny URLs" <<container>> as messageQueue 
+
+  rectangle "== Core system\n<size:12>[System]</size>" <<system_boundary>><<boundary>> as coreSystem  {
+    rectangle "== URL Service\n//<size:12>[Go]</size>//\n\nHandles creation tiny URL and redirects to long URL from tiny URL" <<webApp>><<container>> as urlService 
+    database "== URL database\n//<size:12>[PgSQL]</size>//\n\nStores long URLs by tiny URLs" <<db>><<container>> as urlDatabase 
+    database "== URL cache\n//<size:12>[Tarantool]</size>//\n\nStores popular long URLs by tiny URLs" <<db>><<container>> as urlCache 
+}
+
+user - ->> loadBalancer : **Creates tiny URL and redirects from tiny URL to long URL**\n//<size:12>[REST]</size>//
+loadBalancer - ->> urlService : **Creates tiny URL and redirects from tiny URL to long URL**\n//<size:12>[REST]</size>//
+
+urlService - ->> urlDatabase : **Creates tiny URLs and gets long URLs by tiny URLs**
+urlService - ->> urlCache : **Gets and puts least frequently used URLs**
+urlService - ->> messageQueue : **Publishes click events by tiny URLs**
+analyticsSystem - ->> messageQueue : **Subscribes on click events by tiny URLs**
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

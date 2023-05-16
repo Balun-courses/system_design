@@ -1,0 +1,22 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user, "User")
+Container(loadBalancer, "Load Balancer", "Nginx", "Uses round robin")
+ContainerQueue(messageQueue, "Events queue", "Kafka", "Message queue for events by tiny URLs")
+Container(coreSystem, "Core system", "Software system", "Stores different analytic information about tiny URLs")
+
+System_Boundary(analyticsSystem, "Analytics system") {
+    Container(analyticsService, "Analytics Service", "Go", "Handles requests by clicks information and each hour stores aggregated information about click numbers of each tiny URL to cache", $tags="webApp")
+    ContainerDb(analyticsDatabase, "Analytics database", "ClickHouse", "Stores analytics information about clicks of each tiny URL",  $tags="db")
+    ContainerDb(analyticsCache, "Analytics cache", "Tarantool", "Stores aggregated information about number of clicks by each tiny URL",  $tags="db")
+}
+
+Rel(user, loadBalancer, "Gets clicks information by tiny URLs", "REST")
+Rel(loadBalancer, analyticsService, "Gets clicks information by tiny URLs", "REST")
+
+Rel(coreSystem, messageQueue, "Publishes click events by tiny URLs")
+Rel(analyticsService, messageQueue, "Subscribes on click events by tiny URLs")
+Rel(analyticsService, analyticsDatabase, "Stores click events and also aggregates information about all clicks by tiny URLs")
+Rel(analyticsService, analyticsCache, "Gets clicks number of each tiny URL, also stores information about clicks number of each tiny URL")
+@enduml

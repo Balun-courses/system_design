@@ -1,0 +1,22 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user, "User")
+Container(loadBalancer, "Load Balancer", "Nginx", "Uses round robin")
+Container(analyticsSystem, "Analytics system", "Software system", "Stores different analytic information about tiny URLs")
+ContainerQueue(messageQueue, "Events queue", "Kafka", "Message queue for events by tiny URLs")
+
+System_Boundary(coreSystem, "Core system") {
+    Container(urlService, "URL Service", "Go", "Handles creation tiny URL and redirects to long URL from tiny URL", $tags="webApp")
+    ContainerDb(urlDatabase, "URL database", "PgSQL", "Stores long URLs by tiny URLs",  $tags="db")
+    ContainerDb(urlCache, "URL cache", "Tarantool", "Stores popular long URLs by tiny URLs",  $tags="db")
+}
+
+Rel(user, loadBalancer, "Creates tiny URL and redirects from tiny URL to long URL", "REST")
+Rel(loadBalancer, urlService, "Creates tiny URL and redirects from tiny URL to long URL", "REST")
+
+Rel(urlService, urlDatabase, "Creates tiny URLs and gets long URLs by tiny URLs")
+Rel(urlService, urlCache, "Gets and puts least frequently used URLs")
+Rel(urlService, messageQueue, "Publishes click events by tiny URLs")
+Rel(analyticsSystem, messageQueue, "Subscribes on click events by tiny URLs")
+@enduml

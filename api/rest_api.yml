@@ -1,0 +1,137 @@
+openapi: 3.0.0
+
+tags:
+  - name: TinyURL
+  - name: Analytics
+
+info:
+  title: TinyURL API
+  description: Current API describes interaction with TinyURL
+  version: 1.0.0
+
+paths:
+  /tiny_urls:
+    post:
+      summary: Create tiny url
+      description: Method creates tiny url from long url
+      tags:
+        - TinyURL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                long_url:
+                  type: string
+                  description: long url
+              required:
+                - long_url
+            examples:
+              request:
+                value:
+                  long_url: "https://test.com/long_long_long_url"
+      responses:
+        200:
+          description: Ok
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: id of the tiny url
+                  tiny_url:
+                    type: string
+                    description: tiny url for long url
+                required:
+                  - id
+                  - tiny_url
+              examples:
+                response:
+                  value:
+                    id: "12ae3c"
+                    tiny_url: "https://tiny_url.ru/12ae3c"
+        400:
+          description: Bad Request
+        500:
+          description: Server error
+
+  /tiny_urls/{id}:
+    delete:
+      summary: Remove tiny url
+      description: Method removes tiny url
+      tags:
+        - TinyURL
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Tiny url id (uri of the tiny url)
+          schema:
+            type : string
+      responses:
+        200:
+          description: Ok
+        404:
+          description: Not found
+        500:
+          description: Server error
+
+  /{id}:
+    get:
+      summary: Redirect to long url
+      description: Method redirects to long url by tiny url id
+      tags:
+        - TinyURL
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Tiny url id (uri of the tiny url)
+          schema:
+            type : string
+      responses:
+        302:
+          description: Redirect
+        404:
+          description: Not found
+        500:
+          description: Server error
+
+  /clicks/{id}:
+    get:
+      summary: Get clicks info about tiny url
+      description: Method returns clicks info about tiny url
+      tags:
+        - Analytics
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Tiny url id (uri of the tiny url)
+          schema:
+            type : string
+      responses:
+        200:
+          description: Ok
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: number
+                    description: Number of clicks
+                required:
+                  - count
+              examples:
+                response:
+                  value:
+                    count: 143
+        404:
+          description: Not found
+        500:
+          description: Server error

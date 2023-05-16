@@ -1,0 +1,10 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user, "User")
+Container(coreSystem, "Core system", "Software system", "Handles creation of tiny URL from long URL and redirections from tiny to long URL")
+Container(analyticsSystem, "Analytics system", "Software system", "Stores different analytic information about tiny URLs")
+
+Rel(user, coreSystem, "Creates tiny URL and redirects from tiny to long URL")
+Rel(user, analyticsSystem, "Gets different clicks information by tiny URLs")
+@enduml
